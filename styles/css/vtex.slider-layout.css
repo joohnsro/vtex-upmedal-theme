@@ -1,0 +1,78 @@
+.sliderLayoutContainer {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    position: relative;
+}
+
+.sliderLayoutContainer--carousel {
+    max-width: 960px;
+    margin: 5px auto;
+}
+
+.imageElement {
+    border-radius: 20px;
+}
+
+.sliderArrows {
+    position: absolute;
+    top: 105%;
+    width: 54px;
+    height: 24px;
+    border-radius: 6px;
+    padding: 4px;
+    transition: background-color .2s;
+}
+
+.caretIcon--carousel {
+    width: 16px;
+    height: 16px;
+    color: #424242;
+    transition: color .2s;
+}
+
+.sliderArrows:hover {
+    background-color: #424242 !important;
+}
+
+.sliderArrows:hover .caretIcon--carousel {
+    color: #ffffff;
+}
+
+.paginationDotsContainer {
+    position: absolute;
+    top: 105%;
+    height: 24px;
+    max-width: 60%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.paginationDot {
+    background-color: #424242;
+    cursor: default;
+    width: 12px !important;
+    height: 12px !important;
+}
+
+.paginationDot--isActive {
+    background-color: #59ff00;
+}
+
+.sliderLayoutContainer--productsList .sliderTrack{
+    width: 100% !important;
+    max-width: 100% !important;
+    display: block;
+    transform: unset !important;
+}
+
+.sliderLayoutContainer--productsList .slide--visible {
+    min-width: 350px;
+    display: inline-block;
+    margin-bottom: 30px;
+}
+
+.sliderLayoutContainer--productsList .slide--visible:nth-child(odd) {
+    float: right;
+}

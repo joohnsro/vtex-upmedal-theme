@@ -1,0 +1,37 @@
+.listContainer {
+    background-color: #212121;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-grow: 0;
+    overflow: hidden;
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+
+.listItem {
+    padding: 0;
+}
+
+.listItem :global(.vtex-button) {
+    min-width: 160px;
+    color: #ffffff !important;
+    font-weight: 500 !important;
+    text-transform: uppercase;
+    text-align: center;
+    background: transparent;
+    border: none;
+    padding-bottom: 0 !important;
+}
+
+.listItem :global(.vtex-button):hover {
+    background: transparent !important;
+}
+
+.listItemActive :global(.vtex-button) {
+    color: #59ff00 !important;
+    background-color: transparent !important;
+    border-bottom: 2px solid #59ff00;
+    border-radius: 0 !important;
+}

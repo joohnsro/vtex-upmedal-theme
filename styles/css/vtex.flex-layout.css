@@ -1,0 +1,22 @@
+.flexRowContent--header {
+    background-color: #212121;
+}
+
+.flexCol {
+    padding-top: 10px;
+}
+
+.tab-products {
+    max-width: 960px;
+    margin: 5px auto;
+}
+
+.flexRowContent--productContainer {
+    width: 860px;
+    margin: 60px auto;
+    padding: 0 20px;
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+    justify-content: space-between !important;
+}

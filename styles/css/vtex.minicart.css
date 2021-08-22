@@ -1,0 +1,20 @@
+.minicartWrapperContainer{
+    flex-grow: 0;
+    max-width: 50%;
+}
+
+.openIconContainer--cart-custom :global(.vtex-button) {
+    padding: 0;
+    margin-left: 24px;
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+    overflow: hidden;
+    transition: background-color .3s;
+}
+
+.openIconContainer--cart-custom :global(.vtex-button):focus,
+.openIconContainer--cart-custom :global(.vtex-button):active,
+.openIconContainer--cart-custom :global(.vtex-button):hover {
+    background-color: #303030;
+}

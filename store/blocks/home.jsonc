@@ -1,15 +1,70 @@
 {
   "store.home": { 
     "blocks": [
-      "rich-text"
+      "list-context.image-list#custom",
+      "flex-layout.row#tab-list"
     ]
   },
-  "rich-text": { 
-    "props": { 
-      "text": "VTEX Store Framework",
-      "textAlignment": "CENTER",
-      "textPosition": "CENTER",
-      "font": "t-heading-1"
+  "list-context.image-list#custom": {
+    "children": ["slider-layout#images"],
+    "props": {
+      "images": [
+        {
+          "image": "https://i.ibb.co/WBxBNjN/BANNER-WOOD.png",
+          "description": "Promoção 1"
+        },
+        {
+          "image": "https://i.ibb.co/wp5FTN8/W6-S9-NXIJ40-I86-DJI17-S40123-EYNM3-J6-CNF24-M4-Y04-GGC9-TBSXU.png",
+          "description": "Promoção 2"
+        }
+      ]
+    }
+  },
+  "slider-layout#images": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": false,
+      "showNavigationArrows": "desktopOnly",
+      "blockClass": "carousel",
+      "fullWidth": false
+    }
+  },
+  "flex-layout.row#tab-list": {
+    "children": ["list-context.product-list#tab-list"],
+    "props": {
+      "blockClass": "productContainer"
+    }
+  },
+  "list-context.product-list#tab-list": {
+    "blocks": ["product-summary.shelf#tab-list"],
+    "children": ["slider-layout#list-products"],
+    "props": {
+      "category": "20",
+      "hideUnavailableItems": true
+    }
+  },
+  "product-summary.shelf#tab-list": {
+    "children": [
+      "product-summary-name",
+      "product-rating-inline",
+      "product-summary-image",
+      "product-summary-price",
+      "product-summary-buy-button"
+    ],
+    "props": {
+      "blockClass": "productItem"
+    }
+  },
+  "slider-layout#list-products": {
+    "props": {
+      "showNavigationArrows": "never",
+      "showPaginationDots": "never",
+      "usePagination": true,
+      "blockClass": "productsList"
     }
   }
 }
